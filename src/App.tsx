@@ -1,8 +1,11 @@
-import './styles/global.css';
+
+
+import { Header } from './components/Header';
+import './styles/global.scss';
 
 function App() {
   return (
-    <div>Hello World</div>
+  <Header />
   );
 }
 
