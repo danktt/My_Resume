@@ -1,12 +1,16 @@
-
-
-import { Header } from './components/Header';
-import './styles/global.scss';
+import { Navbar } from "./components/Navbar";
+import { BrowserRouter as  Router} from 'react-router-dom'
+import './styles/global.css'
 
 function App() {
   return (
-  <Header />
+    <Router>
+      <Navbar />
+    </Router>
   );
 }
 
 export default App;
+
+
+
