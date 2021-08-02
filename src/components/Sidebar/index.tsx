@@ -14,13 +14,15 @@ import {
 
  export interface Props{
    isOpen?: boolean ;
+   onClick(): void ;
  }
  
-const Sidebar: React.FC<Props> = ({ isOpen }) => {
+ 
+const Sidebar: React.FC<Props> = ({ isOpen, onClick}) => {
   return(
     <>
-      <SidebarContainer isOpen={isOpen}>
-        <Icon> 
+      <SidebarContainer   isOpen={isOpen} onClick={onClick}>
+        <Icon onClick={onClick}> 
           <CloseIcon />
         </Icon>
         <SidebarWrapper>
@@ -28,10 +30,10 @@ const Sidebar: React.FC<Props> = ({ isOpen }) => {
             <SidebarRouter to="/">Download CV</SidebarRouter>
           </SideBtnWrap>
           <NavItem>
-            <img src={profImg} alt="Image Profile" />
-            
+            <img src={profImg} alt=""/>            
           </NavItem>
           <SidebarMenu>
+            <SidebarLink to="/home">Home</SidebarLink>
             <SidebarLink to="/about">About</SidebarLink>
             <SidebarLink to="/services">Services</SidebarLink>
             <SidebarLink to="/education">Education</SidebarLink>

@@ -18,9 +18,9 @@ export const SidebarContainer = styled.aside<Props>`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  /* opacity: ${(props) => props.isOpen ? '100%' : '0'};
-  top: ${( props) => props.isOpen ? '0' : '-100%'}; */
-  top:0;
+  opacity: ${(props) => props.isOpen ? '100%' : '0'};
+  top: ${( props) => props.isOpen ? '0' : '-100%'};
+  
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -99,6 +99,7 @@ export const SidebarRouter = styled(LinkR)`
   font-size: 16px;
   outline: none;
   border: none;
+  text-decoration: none;
   cursor: pointer;
   transition: filter 0.2s;
 

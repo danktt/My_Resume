@@ -27,7 +27,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width:100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1440px;
  
 `
 
@@ -42,6 +42,7 @@ export const NavLogo = styled(LinkR)`
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
+  font-size: 30px;
   text-decoration: none;
   
   
@@ -50,7 +51,7 @@ export const NavLogo = styled(LinkR)`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1050px){
     display: block;
     position: absolute;
     top: 0;
@@ -68,7 +69,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: -22px;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1050px){
     display: none;
   }
 `
@@ -76,6 +77,9 @@ export const NavItem = styled.li`
   height: 80px;
 `
 export const NavLinks = styled(LinkS)`
+  font-family: Poppins 200;
+  font-size: 16px;
+  letter-spacing: 1px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -93,20 +97,22 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1050px){
     display: none;
   }
 `
 
 export const NavBtnLink = styled(LinkR)`
+  font-family: Poppins 300;
   border-radius: 50px;
   background: #FCA311;
   white-space: nowrap;
   padding: 10px 22px;
   color: #000814;
-  font-size: 16px;
+  font-size: 19px;
   outline: none;
   border: none;
+  text-decoration: none;
   cursor: pointer;
   transition: filter 0.2s;
 

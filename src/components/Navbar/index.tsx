@@ -11,18 +11,23 @@ import {
   NavBtnLink
 } from './NavbarElements'
 
+export interface ToggleProps {
+  toggle(): void;
+}
 
-
-export function Navbar(){
+const Navbar:React.FC<ToggleProps> = ({toggle})=>{
   return(
     <>
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">DANKTT</NavLogo>
-        <MobileIcon>
+        <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu> 
+          <NavItem> 
+            <NavLinks to="home">Home</NavLinks>
+          </NavItem>
           <NavItem> 
             <NavLinks to="about">About</NavLinks>
           </NavItem>
@@ -48,3 +53,5 @@ export function Navbar(){
     </>
   )
 }
+
+export default Navbar;

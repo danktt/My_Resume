@@ -1,12 +1,12 @@
 import { BrowserRouter as  Router} from 'react-router-dom'
-import Layout from './components/Layout'
+import Home from './pages'
 import './styles/global.css'
 
 
 function App() {
   return (
     <Router>
-     <Layout />
+     <Home />
     </Router>
   );
 }
