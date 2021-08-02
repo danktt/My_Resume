@@ -87,6 +87,7 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  
 
   &.acitve{
     color: #FCA311;
@@ -104,6 +105,8 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   font-family: Poppins 300;
+  text-decoration: none;
+
   border-radius: 50px;
   background: #FCA311;
   white-space: nowrap;
@@ -115,6 +118,7 @@ export const NavBtnLink = styled(LinkR)`
   text-decoration: none;
   cursor: pointer;
   transition: filter 0.2s;
+
 
   &:hover{
     filter: brightness(0.8);
