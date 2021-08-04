@@ -4,6 +4,7 @@ import {
   HeroBg,
   HeroBack,
   HeroContent,
+  HeroP1,
   HeroH1,
   HeroP,
   Container
@@ -20,7 +21,8 @@ const HeroSection: React.FC = () => {
         </HeroBg>
       {/* </HeroContainer> */}
       <HeroContent>
-        <HeroH1>I’m Danilo Miranda</HeroH1>
+        <HeroP1>Welcome</HeroP1>
+        <HeroH1>I’m Danilo Miranda <p>.</p></HeroH1>
         <HeroP>SOFTWARE DEVELOPER</HeroP>
       </HeroContent>
     </Container>
