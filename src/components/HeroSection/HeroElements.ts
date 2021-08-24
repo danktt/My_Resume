@@ -56,9 +56,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
+  
 
 `
 export const HeroP1 = styled.p`
@@ -140,6 +138,4 @@ transition : filter 0.2s;
   border-color: #fff;
 }
 
-`
-export const HeroFooter = styled.footer`
 `

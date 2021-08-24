@@ -1,4 +1,5 @@
 import Back from '../../assets/images/back.jpg'
+import Typewriter from 'typewriter-effect'
 import { 
   // HeroContainer,
   HeroBg,
@@ -10,8 +11,8 @@ import {
   Container,
   HeroBtnWrapper,
   Button,
-  HeroFooter
 } from './HeroElements'
+import Footer from '../Footer'
 
 
 const HeroSection: React.FC = () => {
@@ -25,7 +26,20 @@ const HeroSection: React.FC = () => {
       {/* </HeroContainer> */}
       <HeroContent>
         <HeroP1>Welcome</HeroP1>
-        <HeroH1>I’m Danilo Miranda <p>.</p></HeroH1>
+        <HeroH1> 
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+              delay: 100,
+              strings: [
+                "I’m Danilo Miranda",
+                "I’m a Web Developer",
+                "I’m a Designer",
+              ],
+            }}          
+          />
+          </HeroH1>
         <HeroP>SOFTWARE DEVELOPER</HeroP>
       
         <HeroBtnWrapper>
@@ -33,11 +47,10 @@ const HeroSection: React.FC = () => {
             HIRE
           </Button>
         </HeroBtnWrapper>
+          <Footer />
       </HeroContent>
     </Container>
-    <HeroFooter>
-      Aqui é o footer
-    </HeroFooter>
+    
   </>
   )
 }
