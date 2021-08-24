@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
-export const HeroContainer = styled.div`
-  background: #0c0c0c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  height:800px;
-  /* position: relative; */
+// export const HeroContainer = styled.div`
+//   background: #0c0c0c;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0;
+//   height:800px;
+//   /* position: relative; */
   
-`
+  
+// `
 
 export const Container = styled.div`
   display: flex;
@@ -21,6 +22,10 @@ export const Container = styled.div`
   align-items: center;
   padding: 0;
   height:800px;
+
+  
+
+
 
 `
 
@@ -51,6 +56,9 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 
 `
 export const HeroP1 = styled.p`
@@ -103,3 +111,35 @@ export const HeroP = styled.p`
 
 `
 
+export const HeroBtnWrapper = styled.div`
+ margin-top: 32px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  
+`
+export const Button = styled.button`
+border-radius: 16px;
+height: 40px;
+width: 200px;
+font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid 2px;
+border-color: #FCA311;
+background: transparent;
+color: #FCA311;
+cursor: pointer;
+transition : filter 0.2s;
+
+
+&:hover{
+  filter: brightness(0.8);
+  color: #fff;
+  border-color: #fff;
+}
+
+`
+export const HeroFooter = styled.footer`
+`

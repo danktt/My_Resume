@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import Navbar  from '../components/Navbar';
@@ -13,8 +12,6 @@ const Home = () => {
   const toggle = () =>{
     setIsOpen(!isOpen);
   }
-
-
 
 
   return (

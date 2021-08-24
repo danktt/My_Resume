@@ -80,8 +80,9 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover{
-    color: #FCA311; 
+    
     filter: brightness(0.8);
+    color: #FCA311; 
   }
 `
 export const SideBtnWrap = styled.div`

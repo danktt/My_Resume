@@ -33,12 +33,12 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClick}) => {
             <img src={profImg} alt=""/>            
           </NavItem>
           <SidebarMenu>
-            <SidebarLink to="/home">Home</SidebarLink>
-            <SidebarLink to="/about">About</SidebarLink>
-            <SidebarLink to="/services">Services</SidebarLink>
-            <SidebarLink to="/education">Education</SidebarLink>
-            <SidebarLink to="/experience">Experience</SidebarLink>
-            <SidebarLink to="/contact">Contact</SidebarLink>    
+            <SidebarLink to="/home" onClick={onClick}>Home</SidebarLink>
+            <SidebarLink to="/about" onClick={onClick}>About</SidebarLink>
+            <SidebarLink to="/services" onClick={onClick}>Services</SidebarLink>
+            <SidebarLink to="/education" onClick={onClick}>Education</SidebarLink>
+            <SidebarLink to="/experience" onClick={onClick}>Experience</SidebarLink>
+            <SidebarLink to="/contact" onClick={onClick}>Contact</SidebarLink>    
           </SidebarMenu>
         </SidebarWrapper>
           
