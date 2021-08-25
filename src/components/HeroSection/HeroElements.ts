@@ -55,6 +55,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
   
   
 
@@ -65,6 +66,7 @@ export const HeroP1 = styled.p`
   margin-left: 16px;
   align-self: start;
   
+  
 `
 
 export const HeroH1 = styled.h1`
@@ -72,12 +74,13 @@ export const HeroH1 = styled.h1`
   font-size: 65px;
   text-align: center;
   display: flex;
+  position: relative;
 
-
+  
   p{
     color: #FCA311;
     font-size:65px;
-  }
+   }
 
   @media screen and (max-width:960px){
     font-size: 40px;

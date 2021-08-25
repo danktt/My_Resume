@@ -33,9 +33,8 @@ const HeroSection: React.FC = () => {
               loop: true,
               delay: 100,
               strings: [
-                "I’m Danilo Miranda",
-                "I’m a Web Developer",
-                "I’m a Designer",
+                "I’m Danilo Miranda.",
+                "I’m a Web Developer.",
               ],
             }}          
           />
@@ -47,8 +46,8 @@ const HeroSection: React.FC = () => {
             HIRE
           </Button>
         </HeroBtnWrapper>
-          <Footer />
       </HeroContent>
+          <Footer />
     </Container>
     
   </>
