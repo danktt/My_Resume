@@ -1,11 +1,11 @@
-import Back from '../../assets/images/back.jpg'
+// import imgBackground from '../../assets/images/background.jpg'
 import Typewriter from 'typewriter-effect'
 import { 
   // HeroContainer,
-  HeroBg,
-  HeroBack,
+  //HeroBg,
+  //HeroBackground,
   HeroContent,
-  HeroP1,
+  HeroTitle,
   HeroH1,
   HeroP,
   Container,
@@ -18,40 +18,39 @@ import Footer from '../Footer'
 const HeroSection: React.FC = () => {
   return (
     <>
-    <Container>
+      <Container>
+        <HeroContent>
+          <HeroTitle>Welcome</HeroTitle>
+            <div>
+            <HeroH1>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  strings: ["I’m Danilo Miranda.", "I’m a Web Developer."],
+                }}
+              />
+            </HeroH1>
+            </div>
+          <HeroP>SOFTWARE DEVELOPER</HeroP>
+          <HeroBtnWrapper>
+            <Button>HIRE</Button>
+          </HeroBtnWrapper>
+            < Footer />
+        </HeroContent>
+      </Container>
+
+
+
+
       {/* <HeroContainer> */}
-        <HeroBg>
-          <HeroBack src={Back}  />
-        </HeroBg>
+      {/* <HeroBg>
+                <HeroBackground src={imgBackground}  />
+              </HeroBg> */}
       {/* </HeroContainer> */}
-      <HeroContent>
-        <HeroP1>Welcome</HeroP1>
-        <HeroH1> 
-          <Typewriter
-            options={{
-              autoStart: true,
-              loop: true,
-              delay: 100,
-              strings: [
-                "I’m Danilo Miranda.",
-                "I’m a Web Developer.",
-              ],
-            }}          
-          />
-          </HeroH1>
-        <HeroP>SOFTWARE DEVELOPER</HeroP>
-      
-        <HeroBtnWrapper>
-          <Button>
-            HIRE
-          </Button>
-        </HeroBtnWrapper>
-      </HeroContent>
-          <Footer />
-    </Container>
-    
-  </>
-  )
+    </>
+  );
 }
 
 export default HeroSection;

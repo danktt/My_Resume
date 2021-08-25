@@ -7,7 +7,8 @@ import {
   FaTwitter, 
   FaWhatsapp 
 } from "react-icons/fa"
-import {FooterWrapper} from './FooterElements'
+
+  import {FooterWrapper, FooterText,Content} from './FooterElements'
 
 
 
@@ -15,15 +16,21 @@ import {FooterWrapper} from './FooterElements'
 const Footer: React.FC = () =>{
   return (
     <>
-    <FooterWrapper>
-      <FaLinkedinIn />
-      <FaWhatsapp />
-      <FaTwitter />
-      <FaFacebookF />
-      <FaInstagram />
-      <FaGithub />
-      <FaFacebookMessenger />
-    </FooterWrapper>
+      <Content>
+        <FooterText>
+              <span>EN</span>
+              <span>PT</span>
+            </FooterText>
+        <FooterWrapper>
+          <FaLinkedinIn />
+          <FaWhatsapp />  
+          <FaTwitter />
+          <FaFacebookF />
+          <FaInstagram />
+          <FaGithub />
+          <FaFacebookMessenger />
+      </FooterWrapper>
+      </Content>
     </>
   )
 }

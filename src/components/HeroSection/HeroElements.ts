@@ -1,51 +1,19 @@
 import styled from "styled-components"
 
-// export const HeroContainer = styled.div`
-//   background: #0c0c0c;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0;
-//   height:800px;
-//   /* position: relative; */
-  
-  
-// `
 
 export const Container = styled.div`
-  display: flex;
+  
   justify-content: center;
 
-  background: #0c0c0c;
+  background: #14213D;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  height:800px;
-
   
-
-
+  height:820px;
 
 `
 
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-`
-
-export const HeroBack = styled.img`
-  width: 100%;
-  height: 100%;
-  
-  background: #232a34;
-`
 
 export const HeroContent = styled.div`
   /* z-index: auto; */
@@ -57,13 +25,16 @@ export const HeroContent = styled.div`
   align-items: center;
   width: auto;
   
+  div{
+    width: 750px;
+  }
   
 
 `
-export const HeroP1 = styled.p`
+export const HeroTitle = styled.p`
   color: #fff;
   font-size:35px;
-  margin-left: 16px;
+  margin-left: 15%;
   align-self: start;
   
   
@@ -75,12 +46,10 @@ export const HeroH1 = styled.h1`
   text-align: center;
   display: flex;
   position: relative;
-
+  width: auto;
   
-  p{
-    color: #FCA311;
-    font-size:65px;
-   }
+  
+ 
 
   @media screen and (max-width:960px){
     font-size: 40px;
@@ -94,12 +63,9 @@ export const HeroH1 = styled.h1`
 `
 export const HeroP = styled.p`
   color: #fff;
-  font-size: 35px;
-  margin-top: 2px;
-  margin-left: 16px;
+  font-size:35px;
+  margin-left: 15%;
   align-self: start;
-  text-align: center;
-  max-width: 600px;
 
 
   @media screen and (max-width:960px){
@@ -142,3 +108,36 @@ transition : filter 0.2s;
 }
 
 `
+
+//IS NOT USED
+
+// export const HeroContainer = styled.div`
+//   background: #0c0c0c;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 0;
+//   height:800px;
+//   /* position: relative; */
+  
+  
+// `
+
+
+// export const HeroBg = styled.div` // This is div of Img
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+  
+// `
+
+// export const HeroBackground = styled.img` // Bk of
+//   width: 100%;
+//   height:860px;
+  
+//   background: #3424;
+// `

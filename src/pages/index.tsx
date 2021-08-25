@@ -17,10 +17,10 @@ const Home = () => {
 
   return (
     <>
-    <Sidebar isOpen={isOpen} onClick={toggle}/>
+    {/* <Sidebar isOpen={isOpen} onClick={toggle}/> */}
     <Navbar  toggle={toggle}/>
     <HeroSection />
-    <InfoSection />
+    {/* <InfoSection /> */}
     </>
 
   );
