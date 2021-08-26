@@ -32,7 +32,7 @@ export const NavbarContainer = styled.div`
 `
 
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.h1`
   font-family: Fira Sans Condensed;
   color: #fff;
   justify-self: flex-start;
@@ -79,7 +79,6 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkS)`
   font-family: Poppins 200;
   font-size: 16px;
-  letter-spacing: 1px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -88,11 +87,6 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   
-
-  &.acitve{
-    color: #FCA311;
-  }
-
   &:hover{
     color: #FCA311;
   }

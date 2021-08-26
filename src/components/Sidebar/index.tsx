@@ -27,13 +27,13 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClick}) => {
         </Icon>
         <SidebarWrapper>
         <SideBtnWrap>
-            <SidebarRouter to="/">Download CV</SidebarRouter>
+            <SidebarRouter to="#">Download CV</SidebarRouter>
           </SideBtnWrap>
           <NavItem>
             <img src={profImg} alt=""/>            
           </NavItem>
           <SidebarMenu>
-            <SidebarLink to="/home" onClick={onClick}>Home</SidebarLink>
+            <SidebarLink to="/" onClick={onClick}>Home</SidebarLink>
             <SidebarLink to="/about" onClick={onClick}>About</SidebarLink>
             <SidebarLink to="/services" onClick={onClick}>Services</SidebarLink>
             <SidebarLink to="/education" onClick={onClick}>Education</SidebarLink>

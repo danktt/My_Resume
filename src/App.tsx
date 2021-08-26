@@ -1,13 +1,17 @@
-import { BrowserRouter as  Router} from 'react-router-dom'
-import Home from './pages'
+import { BrowserRouter} from 'react-router-dom'
+
+import Routes from './Routes';
 import './styles/global.css'
+
 
 
 function App() {
   return (
-    <Router>
-     <Home />
-    </Router>
+    <BrowserRouter>
+     
+        <Routes />
+        
+    </BrowserRouter>
   );
 }
 

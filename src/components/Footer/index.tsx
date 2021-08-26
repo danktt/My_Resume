@@ -17,19 +17,19 @@ const Footer: React.FC = () =>{
   return (
     <>
       <Content>
-        <FooterText>
+          <FooterText>
               <span>EN</span>
               <span>PT</span>
-            </FooterText>
-        <FooterWrapper>
-          <FaLinkedinIn />
-          <FaWhatsapp />  
-          <FaTwitter />
-          <FaFacebookF />
-          <FaInstagram />
-          <FaGithub />
-          <FaFacebookMessenger />
-      </FooterWrapper>
+          </FooterText>
+          <FooterWrapper>
+            <FaLinkedinIn />
+            <FaWhatsapp />  
+            <FaTwitter />
+            <FaFacebookF />
+            <FaInstagram />
+            <FaGithub />
+            <FaFacebookMessenger />
+        </FooterWrapper>
       </Content>
     </>
   )

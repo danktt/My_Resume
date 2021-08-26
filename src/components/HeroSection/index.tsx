@@ -11,9 +11,20 @@ import {
   Container,
   HeroBtnWrapper,
   Button,
+  FooterWrapper, 
+  FooterText,
+  FooterContainer
 } from './HeroElements'
-import Footer from '../Footer'
 
+import { 
+  FaFacebookF,
+  FaFacebookMessenger, 
+  FaGithub, 
+  FaInstagram, 
+  FaLinkedinIn, 
+  FaTwitter, 
+  FaWhatsapp 
+} from "react-icons/fa"
 
 const HeroSection: React.FC = () => {
   return (
@@ -37,9 +48,29 @@ const HeroSection: React.FC = () => {
           <HeroBtnWrapper>
             <Button>HIRE</Button>
           </HeroBtnWrapper>
-            < Footer />
         </HeroContent>
       </Container>
+
+     {/* ===============Footer=================            */}
+     <FooterContainer>
+       
+            <FooterText>
+                  <p>EN</p>
+                  <p>PT</p>
+              </FooterText>
+         
+          
+          <FooterWrapper>
+            <FaLinkedinIn />
+            <FaWhatsapp />  
+            <FaTwitter />
+            <FaFacebookF />
+            <FaInstagram />
+            <FaGithub />
+            <FaFacebookMessenger />
+        </FooterWrapper>
+      </FooterContainer>
+
 
 
 

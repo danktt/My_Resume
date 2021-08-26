@@ -20,28 +20,28 @@ const Navbar:React.FC<ToggleProps> = ({toggle})=>{
     <>
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">DANKTT</NavLogo>
+        <NavLogo>DANKTT</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu> 
           <NavItem> 
-            <NavLinks to="home">Home</NavLinks>
+            <NavLinks to="/home">Home</NavLinks>
           </NavItem>
           <NavItem> 
-            <NavLinks to="about">About</NavLinks>
+            <NavLinks to="/about">About</NavLinks>
           </NavItem>
           <NavItem> 
-            <NavLinks to="services">Services</NavLinks>
+            <NavLinks to="/services">Services</NavLinks>
           </NavItem>
           <NavItem> 
-            <NavLinks to="education">Education</NavLinks>
+            <NavLinks to="/education">Education</NavLinks>
           </NavItem>
           <NavItem> 
-            <NavLinks to="experience">Experience</NavLinks>
+            <NavLinks to="/experience">Experience</NavLinks>
           </NavItem>
           <NavItem> 
-            <NavLinks to="contact">Contact</NavLinks>
+            <NavLinks to="/contact">Contact</NavLinks>
           </NavItem>
           
         </NavMenu>

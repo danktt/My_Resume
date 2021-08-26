@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   
-  height:820px;
+  height:896px;
 
 `
 
@@ -108,6 +108,60 @@ transition : filter 0.2s;
 }
 
 `
+
+// FOOTER CODE
+
+export const FooterContainer = styled.footer` 
+display: flex;
+
+justify-content: space-around;
+max-width: 100%;
+background: #14213D;
+height: 50px;
+padding: 0;
+margin: 0;
+`
+
+export const FooterText = styled.div`
+color: #fff;
+font-size: 24px;
+
+text-decoration: underline;
+gap: 14px;
+align-self: start;
+`
+
+export const FooterWrapper = styled.div`
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  
+  svg{
+    gap: 25px;
+  }
+  
+  
+`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //IS NOT USED
 

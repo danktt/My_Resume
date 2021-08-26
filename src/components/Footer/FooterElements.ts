@@ -15,7 +15,7 @@ export const FooterWrapper = styled.div`
   cursor: pointer;
   font-size: 24px;
   gap: 25px;
-  
+  margin-top: 45px;
   
 `
 
