@@ -1,9 +1,9 @@
-// import imgBackground from '../../assets/images/background.jpg'
+
 import Typewriter from 'typewriter-effect'
 import { 
   // HeroContainer,
-  //HeroBg,
-  //HeroBackground,
+  // HeroBg,
+  // HeroBackground,
   HeroContent,
   HeroTitle,
   HeroH1,
@@ -11,8 +11,7 @@ import {
   Container,
   HeroBtnWrapper,
   Button,
-  FooterWrapper, 
-  FooterText,
+  FooterIcons, 
   FooterContainer
 } from './HeroElements'
 
@@ -25,61 +24,68 @@ import {
   FaTwitter, 
   FaWhatsapp 
 } from "react-icons/fa"
+import Navbar from '../Navbar';
+import { useState } from 'react';
+import Sidebar from '../Sidebar';
 
 const HeroSection: React.FC = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () =>{
+    setIsOpen(!isOpen);
+  }
+  
   return (
     <>
-      <Container>
-        <HeroContent>
-          <HeroTitle>Welcome</HeroTitle>
+      <Sidebar isOpen={isOpen} onClick={toggle} />
+
+      <Navbar toggle={toggle} />
+        <Container>
+          <HeroContent>
+            <HeroTitle>Welcome</HeroTitle>
             <div>
-            <HeroH1>
-              <Typewriter
-                options={{
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                  strings: ["I’m Danilo Miranda.", "I’m a Web Developer."],
-                }}
-              />
-            </HeroH1>
+              <HeroH1>
+                <Typewriter
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 100,
+                    strings: ["I’m Danilo Miranda.", "I’m a Web Developer."],
+                  }}
+                />
+              </HeroH1>
             </div>
-          <HeroP>SOFTWARE DEVELOPER</HeroP>
-          <HeroBtnWrapper>
-            <Button>HIRE</Button>
-          </HeroBtnWrapper>
-        </HeroContent>
-      </Container>
+            <HeroP>SOFTWARE DEVELOPER</HeroP>
+            <HeroBtnWrapper>
+              <Button>HIRE</Button>
+            </HeroBtnWrapper>
+          </HeroContent>
 
-     {/* ===============Footer=================            */}
-     <FooterContainer>
-       
-            <FooterText>
-                  <p>EN</p>
-                  <p>PT</p>
-              </FooterText>
-         
-          
-          <FooterWrapper>
-            <FaLinkedinIn />
-            <FaWhatsapp />  
-            <FaTwitter />
-            <FaFacebookF />
-            <FaInstagram />
-            <FaGithub />
-            <FaFacebookMessenger />
-        </FooterWrapper>
-      </FooterContainer>
+          <FooterContainer>
+            {/* <FooterText>
+            <div>
+            <span>EN</span>
+            <span>PT</span>
+            </div>
+          </FooterText> */}
 
-
-
-
-
-      {/* <HeroContainer> */}
-      {/* <HeroBg>
-                <HeroBackground src={imgBackground}  />
-              </HeroBg> */}
+            <FooterIcons>
+              <FaLinkedinIn />
+              <FaWhatsapp />
+              <FaTwitter />
+              <FaFacebookF />
+              <FaInstagram />
+              <FaGithub />
+              <FaFacebookMessenger />
+            </FooterIcons>
+          </FooterContainer>
+        </Container>
       {/* </HeroContainer> */}
+      {/* <HeroContainer> */}
+          {/* <HeroBg>
+          <HeroBackground src={imgBackground} />
+          </HeroBg> */}
     </>
   );
 }

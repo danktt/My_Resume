@@ -1,17 +1,19 @@
 import styled from "styled-components"
-
+import img from '../../assets/images/background.jpg'
 
 export const Container = styled.div`
-  
-  justify-content: center;
 
-  background: #14213D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  height:896px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-image: url(${img});
 
+/* background: #14213D; */
+
+  
+  /* height:896px; */
+    
 `
 
 
@@ -24,7 +26,8 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: auto;
-  
+
+
   div{
     width: 750px;
   }
@@ -37,7 +40,6 @@ export const HeroTitle = styled.p`
   margin-left: 15%;
   align-self: start;
   
-  
 `
 
 export const HeroH1 = styled.h1`
@@ -47,7 +49,6 @@ export const HeroH1 = styled.h1`
   display: flex;
   position: relative;
   width: auto;
-  
   
  
 
@@ -84,6 +85,7 @@ export const HeroBtnWrapper = styled.div`
  flex-direction: column;
  align-items: center;
   
+
 `
 export const Button = styled.button`
 border-radius: 16px;
@@ -112,86 +114,43 @@ transition : filter 0.2s;
 // FOOTER CODE
 
 export const FooterContainer = styled.footer` 
+/* background: #14213D; */
+background: transparent;
 display: flex;
+justify-content: center;
+width: 100vw;
 
-justify-content: space-around;
-max-width: 100%;
-background: #14213D;
-height: 50px;
-padding: 0;
-margin: 0;
+height: 70px;
+z-index: 1;
+margin-top: auto;
+
+
+
+
+
+
 `
 
 export const FooterText = styled.div`
 color: #fff;
 font-size: 24px;
-
+display: flex;
+align-items: center;
 text-decoration: underline;
-gap: 14px;
-align-self: start;
+
 `
 
-export const FooterWrapper = styled.div`
+export const FooterIcons = styled.div`
+  display: flex;
+  align-items: center;
   color: #fff;
   cursor: pointer;
   font-size: 24px;
-  
-  svg{
-    gap: 25px;
-  }
-  
-  
+  gap: 25px;
+
 `
 
+export const HeroContainer = styled.div``
+export const HeroBg = styled.div``
+export const HeroBackground = styled.img``
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//IS NOT USED
-
-// export const HeroContainer = styled.div`
-//   background: #0c0c0c;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0;
-//   height:800px;
-//   /* position: relative; */
-  
-  
-// `
-
-
-// export const HeroBg = styled.div` // This is div of Img
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-  
-// `
-
-// export const HeroBackground = styled.img` // Bk of
-//   width: 100%;
-//   height:860px;
-  
-//   background: #3424;
-// `

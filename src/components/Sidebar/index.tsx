@@ -22,7 +22,7 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClick}) => {
   return(
     <>
       <SidebarContainer   isOpen={isOpen} onClick={onClick}>
-        <Icon onClick={onClick}> 
+        <Icon > 
           <CloseIcon />
         </Icon>
         <SidebarWrapper>
