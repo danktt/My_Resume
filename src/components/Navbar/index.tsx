@@ -26,7 +26,7 @@ const Navbar:React.FC<ToggleProps> = ({toggle})=>{
         </MobileIcon>
         <NavMenu> 
           <NavItem> 
-            <NavLinks to="/home">Home</NavLinks>
+            <NavLinks to="/">Home</NavLinks>
           </NavItem>
           <NavItem> 
             <NavLinks to="/about">About</NavLinks>

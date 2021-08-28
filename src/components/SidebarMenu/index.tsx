@@ -1,6 +1,8 @@
 import profImg from "../../assets/images/prof.jpeg";
 
 import {
+  SideBtnWrap,
+  SidebarRouter,
   Nav, 
   NavItem,
   NvH1, 
@@ -14,6 +16,7 @@ const SideBarMenu: React.FC = () => {
   
   return(
     <Nav>
+      
       <NavItem>
        <img src={profImg} alt=""/> 
       </NavItem>
@@ -30,6 +33,9 @@ const SideBarMenu: React.FC = () => {
           
       </NavMain>
 
+      <SideBtnWrap>
+        <SidebarRouter to="vaikagar">Download CV</SidebarRouter>
+      </SideBtnWrap>
     </Nav>
   )
 }

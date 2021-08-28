@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import { Link as LinkS } from 'react-router-dom'
+import { Link as LinkR } from 'react-router-dom'
+
 
 
   export const Nav = styled.nav`
@@ -8,10 +10,11 @@ import { Link as LinkS } from 'react-router-dom'
     flex-direction: column;
     align-items: center;
 
-    max-width: 24rem;
-    width: 100%;
-    height:100%;
+    max-width: 23rem;
+    
+    /* height:100vh; */
     padding: 2rem;
+  
   ` 
 
   export const NavItem = styled.div`
@@ -21,10 +24,9 @@ import { Link as LinkS } from 'react-router-dom'
 
     img{ 
       border-radius: 50%;
-      height: 9rem;
+      height: 12rem;
       border: 3px solid #FCA311;
     }
-
 
 `
   export const NvH1 = styled.h1`
@@ -59,5 +61,28 @@ import { Link as LinkS } from 'react-router-dom'
     }
   `
 
+export const SideBtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+`
+export const SidebarRouter = styled(LinkR)`
+  border-radius: 50px;
+  background: #FCA311;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #000814;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: filter 0.2s;
 
+  &:hover{
+    filter: brightness(0.8);
+
+  }
+`
 
