@@ -6,7 +6,7 @@ import Education from './pages/EducationSection'
 import Experience from './pages/ExperienceSection'
 import Services from './pages/ServicesSection'
 
-export default  ()  => {
+const Routes = ()  => {
   return(
     
     <Switch>
@@ -40,3 +40,5 @@ export default  ()  => {
 
   )
 }
+
+export default Routes

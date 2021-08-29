@@ -28,13 +28,13 @@ import Navbar from '../Navbar';
 import { useState } from 'react';
 import Sidebar from '../Sidebar';
 
-type UrlProps = {
-  linkedin: "https://www.linkedin.com/in/danilo-miranda15/";
-  instagram: "https://www.instagram.com";
+// type UrlProps = {
+//   linkedin: "https://www.linkedin.com/in/danilo-miranda15/";
+//   instagram: "https://www.instagram.com";
 
-}
+// }
 
-const HeroSection: React.FC = (UrlProps) => {
+const HeroSection: React.FC = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 

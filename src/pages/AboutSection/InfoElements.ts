@@ -18,7 +18,6 @@ export const Div = styled.div`
 export const AboutHeader = styled.div`
   display: flex;
   justify-content: center;
- 
   margin: 0 auto;
   padding: 12rem;
   margin-bottom: -8rem;

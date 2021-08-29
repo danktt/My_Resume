@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: 'Poppins','Noto Sans HK',sans-serif;
 }
+
+:root{
+--yellow-hard: #FCA311;
+}
