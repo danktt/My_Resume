@@ -10,17 +10,20 @@ import { Link as LinkR } from 'react-router-dom'
     flex-direction: column;
     align-items: center;
 
-    max-width: 23rem;
+   box-shadow: 0 0 1rem;
     
-    /* height:100vh; */
-    padding: 2rem;
-  
+    /* max-width: 24rem; */
+    
+    height:100vh;
+    padding: 5rem;
+    
   ` 
 
   export const NavItem = styled.div`
     display:flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 
     img{ 
       border-radius: 50%;
@@ -31,7 +34,7 @@ import { Link as LinkR } from 'react-router-dom'
 `
   export const NvH1 = styled.h1`
     margin-bottom: 4.5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #fff;
   ` 
@@ -39,12 +42,12 @@ import { Link as LinkR } from 'react-router-dom'
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap: 24px;
     width: 100%;
  `
   export const SidebarLink = styled(LinkS)`
     font-family: Poppins 200;
-    font-size: 16px;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     color: #fff;
     display: flex;
@@ -65,7 +68,7 @@ export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
 `
 export const SidebarRouter = styled(LinkR)`
   border-radius: 50px;

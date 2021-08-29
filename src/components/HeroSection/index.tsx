@@ -28,7 +28,13 @@ import Navbar from '../Navbar';
 import { useState } from 'react';
 import Sidebar from '../Sidebar';
 
-const HeroSection: React.FC = () => {
+type UrlProps = {
+  linkedin: "https://www.linkedin.com/in/danilo-miranda15/";
+  instagram: "https://www.instagram.com";
+
+}
+
+const HeroSection: React.FC = (UrlProps) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,7 +77,7 @@ const HeroSection: React.FC = () => {
           </FooterText> */}
 
             <FooterIcons>
-              <FaLinkedinIn />
+                <FaLinkedinIn />
               <FaWhatsapp />
               <FaTwitter />
               <FaFacebookF />

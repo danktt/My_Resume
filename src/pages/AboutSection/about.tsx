@@ -1,45 +1,51 @@
-
-
-import SideBarMenu from '../../components/SidebarMenu';
-import {
-  Container,
-  AboutMain,
-  AboutHeader,
-  AboutH3,
-} from './InfoElements'
-
+import SideBarMenu from "../../components/SidebarMenu";
+import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
 
 const About: React.FC = () => {
   return (
     <>
-    <Container>
-        {/* <AbouteDiv> */}
-          <SideBarMenu />
-        {/* </AbouteDiv> */}
-        <AboutHeader>
-            <h1>Know Me More</h1>
-        </AboutHeader>
-        
-        <AboutMain>
-          <div>
-            <AboutH3>
-              I'm <p> Danilo Miranda, </p> a Software Developer
-            </AboutH3>
+      <Container>
+        <SideBarMenu />
+        <Div>
+          <AboutHeader>
+            <p>
+              Know Me More 
+            </p>
+            <h2>About Me <span> </span> </h2>
+          </AboutHeader>
+
+          <AboutMain>
+            <h2>
+              I'm <span> Danilo Miranda, </span> a Software Developer
+            </h2>
 
             <p>
-              I started in the administrative area and was transferred to the
+                I started in the administrative area and was transferred to the
               communication technology sector, where I started as a computer
-              maintenance technician. Then, I took a specialized course in
-              telecommunications networks, where I went further in the technology
-              area. I entered the Computer Engineering course, studied 5 semesters
-              and did not finish. Currently I work with Information Technology, I am
-              studying Systems Analysis and Development and programming.
+              maintenance technician.
             </p>
-          </div>
-        </AboutMain>
+            <p>
+                Then, I took a specialized course in telecommunications networks,
+              where I went further in the technology area.
+            </p>
+            <p>
+                I entered the Computer Engineering course, studied 5 semesters and
+              did not finish.
+            </p>
+            <p>
+                Currently I work with Information Technology, I am studying
+              Systems Analysis and Development and programming.
+            </p>
+          </AboutMain>
+        </Div>
+        
+        
+
       </Container>
+      
+
     </>
   );
-}
+};
 
 export default About;
