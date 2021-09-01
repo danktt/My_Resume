@@ -26,7 +26,7 @@ export const HeroContent = styled.div`
 
 
   div{
-    width: 750px;
+    width: 760px;
   }
   
 
