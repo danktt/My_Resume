@@ -1,11 +1,9 @@
-import SideBarMenu from "../../components/SidebarMenu";
 import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
 
 const About: React.FC = () => {
   return (
     <>
       <Container>
-        <SideBarMenu />
         <Div>
           <AboutHeader>
             <p>
