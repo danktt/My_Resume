@@ -1,8 +1,17 @@
 import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
 
+import '../../styles/stylesContent.scss';
+import SideBarMenu from "../../components/SidebarMenu";
+
+
+
 const About: React.FC = () => {
   return (
     <>
+      <div className="wrapper">
+      
+      <SideBarMenu />
+      <main>
       <Container>
         <Div>
           <AboutHeader>
@@ -36,10 +45,10 @@ const About: React.FC = () => {
             </p>
           </AboutMain>
         </Div>
-        
-        
-
       </Container>
+        
+        </main>
+        </div>
       
 
     </>

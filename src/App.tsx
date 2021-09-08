@@ -1,15 +1,18 @@
-import { BrowserRouter} from 'react-router-dom'
 
-import Routes from './Routes';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import About from './Pages/AboutSection/about';
+import Home from './Pages/Home';
+
 import './styles/global.scss'
-
+import './styles/stylesContent.scss';
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
+    <Router>
+      <Route exact path='/' component={Home}/>
+      <Route exact path='/about' component={About}/>
+    </Router>
   );
 }
 

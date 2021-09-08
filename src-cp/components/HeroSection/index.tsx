@@ -24,9 +24,11 @@ import {
   FaTwitter, 
   FaWhatsapp 
 } from "react-icons/fa"
+
 import Navbar from '../Navbar';
 import { useState } from 'react';
 import Sidebar from '../Sidebar';
+
 
 // type UrlProps = {
 //   linkedin: "https://www.linkedin.com/in/danilo-miranda15/";
@@ -44,6 +46,7 @@ const HeroSection: React.FC = () => {
   
   return (
     <>
+     
       <Sidebar isOpen={isOpen} onClick={toggle} />
 
       <Navbar toggle={toggle} />
@@ -59,7 +62,7 @@ const HeroSection: React.FC = () => {
                     delay: 100,
                     strings: ["I’m Danilo Miranda.", "I’m a Web Developer."],
                   }}
-                />
+                  />
               </HeroH1>
             </div>
             <HeroP>SOFTWARE DEVELOPER</HeroP>
@@ -87,11 +90,12 @@ const HeroSection: React.FC = () => {
             </FooterIcons>
           </FooterContainer>
         </Container>
+    
       {/* </HeroContainer> */}
       {/* <HeroContainer> */}
           {/* <HeroBg>
           <HeroBackground src={imgBackground} />
-          </HeroBg> */}
+        </HeroBg> */}
     </>
   );
 }
