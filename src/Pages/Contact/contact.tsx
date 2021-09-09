@@ -3,7 +3,7 @@ import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
 import "../../styles/stylesContent.scss";
 import SideBarMenu from "../../Components/SidebarMenu";
 
-const About: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <>
       <div className="wrapper">
@@ -13,7 +13,7 @@ const About: React.FC = () => {
           <Container>
             <Div>
               <AboutHeader>
-                <p>Know Me More</p>
+                <p>CONTACT</p>
                 <h2>
                   About Me <span> </span>{" "}
                 </h2>
@@ -50,4 +50,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Contact;

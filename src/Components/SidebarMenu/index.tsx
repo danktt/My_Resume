@@ -8,7 +8,7 @@ import {
   NvH1, 
   NavMain,
   SidebarLink 
-} from './SidebarMenuElements'
+} from './styles'
 
 
 

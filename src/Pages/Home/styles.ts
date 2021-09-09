@@ -22,7 +22,7 @@ export const HeroContent = styled.div`
 
 
   div{
-    width: 800px;
+    width: 850px;
   }
   
 
