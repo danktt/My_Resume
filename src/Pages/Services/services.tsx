@@ -43,21 +43,7 @@ const Services: React.FC = () => {
                 <SecondSpan>86%</SecondSpan>
               </ExperienceContent>
 
-              <ExperienceContent>
-                <FristSpan>Git</FristSpan>
-                    <ExperienceDiv>
-                      <div />
-                    </ExperienceDiv>
-                <SecondSpan>85%</SecondSpan>
-              </ExperienceContent>
-
-              <ExperienceContent>
-                <FristSpan>Linux</FristSpan>
-                    <ExperienceDiv>
-                      <div />
-                    </ExperienceDiv>
-                <SecondSpan>90%</SecondSpan>
-              </ExperienceContent>
+              
             </Div>
           </Container>
         </main>

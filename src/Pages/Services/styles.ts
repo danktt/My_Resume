@@ -85,9 +85,9 @@ export const MainContent = styled.section`
 export const ExperienceContent = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 6rem;
-
-
+  justify-content: center;
+  margin: 0 13rem;
+    /* background: aqua; */
  
 `
 
@@ -95,13 +95,12 @@ export const FristSpan = styled.span`
 
   font-size: 1rem;
   color: #fff;
-  display: flex;
-  justify-content: center;
+  
 `
 
 export const ExperienceDiv = styled.div`
     flex: 1;
-    height: 1rem;
+    height: .5rem;
     border-radius: 1rem;
     background: #fff;
     margin: 0 20rem;
@@ -109,7 +108,7 @@ export const ExperienceDiv = styled.div`
 
     div{
       width: 86%;
-      height: 1rem;
+      height: .5rem;
       border-radius: 1rem;
       background: #FCA311;
     }

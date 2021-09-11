@@ -1,6 +1,15 @@
-import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
+import {
+  Container,
+  EduactionMain,
+  EduacitonHeader,
+  Div,
+  EducationDiv,
+  EducationFooter
+} from "./styles";
 
 import "../../styles/stylesContent.scss";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { VscDebugBreakpointLog } from "react-icons/vsc"
 import SideBarMenu from "../../Components/SidebarMenu";
 
 const Education: React.FC = () => {
@@ -12,36 +21,51 @@ const Education: React.FC = () => {
         <main>
           <Container>
             <Div>
-              <AboutHeader>
-                <p>EDUACTION</p>
+              <EduacitonHeader>
                 <h2>
-                  About Me <span> </span>{" "}
-                </h2>
-              </AboutHeader>
+                  EDUCATION               
+                  <span>
+                  </span>
 
-              <AboutMain>
-                <h2>
-                  I'm <span> Danilo Miranda, </span> a Software Developer
                 </h2>
 
-                <p>
-                  I started in the administrative area and was transferred to
-                  the communication technology sector, where I started as a
-                  computer maintenance technician.
-                </p>
-                <p>
-                  Then, I took a specialized course in telecommunications
-                  networks, where I went further in the technology area.
-                </p>
-                <p>
-                  I entered the Computer Engineering course, studied 5 semesters
-                  and did not finish.
-                </p>
-                <p>
-                  Currently I work with Information Technology, I am studying
-                  Systems Analysis and Development and programming.
-                </p>
-              </AboutMain>
+                <p>Knowledge</p>
+              </EduacitonHeader>
+
+              <EduactionMain>
+                <header>
+                  <span>2020 – 2023</span>
+                  <h1>University Unicesumar of Três Lagoas</h1>
+                  <h2>Diploma Technologist System analysis and development </h2>
+                </header>
+
+                <EducationDiv>
+                  <div>
+                    <IoIosArrowBack />
+                  </div>
+                  <p>
+                    The course aimed at training, enabling professional
+                    performance in the areas of software development, interfaces
+                    and applications. Possibility to manage systems projects in
+                    multidisciplinary teams, including access to databases and
+                    application development; it also works with emerging
+                    technologies, such as mobile computing and distributed
+                    systems; and installation, update, maintenance and security
+                    of systems, in companies, organizations or in the creation
+                    of your own business.
+                  </p>
+                  <div>
+                    <IoIosArrowForward />
+                  </div>
+                </EducationDiv>
+
+                <EducationFooter>
+                  <div> <VscDebugBreakpointLog /></div>
+                  <div> <VscDebugBreakpointLog /></div>
+                  <div> <VscDebugBreakpointLog /></div>
+                  
+                </EducationFooter>
+              </EduactionMain>
             </Div>
           </Container>
         </main>

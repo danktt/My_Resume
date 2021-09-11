@@ -14,7 +14,7 @@ const About: React.FC = () => {
             <Div>
               <AboutHeader>
                 <h2>
-                  About Me <span> </span>
+                  ABOUTE ME <span> </span>
                 </h2>
                 
                 <p>Know Me More</p>
