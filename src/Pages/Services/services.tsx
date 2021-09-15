@@ -23,7 +23,7 @@ const Services: React.FC = () => {
             <Div>
               <AboutHeader>
                 <h2>
-                  About Me <span> </span>
+                  SERVICES <span> </span>
                 </h2>
 
                 <p>What I do</p>

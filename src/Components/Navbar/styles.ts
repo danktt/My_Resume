@@ -82,7 +82,7 @@ export const NavItem =  styled.div`
 
 export const NavLinks = styled(LinkR)`
   font-family: Poppins 200;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fff;
   display: flex;
   align-items: center;

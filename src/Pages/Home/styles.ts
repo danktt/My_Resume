@@ -8,6 +8,8 @@ export const Container = styled.div`
   height: 100vh;
   background-image: url(${img});
 
+  
+  
 `
 
 
@@ -19,10 +21,10 @@ export const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: auto;
-
+  
 
   div{
-    width: 850px;
+    width: 100vw;
   }
   
 
@@ -30,8 +32,15 @@ export const HeroContent = styled.div`
 export const HeroTitle = styled.p`
   color: #fff;
   font-size:35px;
-  margin-left: 15%;
+  margin-left: 25%;
   align-self: start;
+  display: flex;
+  div{
+    background: aqua;
+    width: 100%;
+    margin-right: 100%;
+  }
+  
   
 
   @media screen and (max-width:960px){
@@ -52,7 +61,6 @@ export const HeroH1 = styled.h1`
   display: flex;
   position: relative;
   width: auto;
-  
  
 
   @media screen and (max-width:960px){
@@ -71,7 +79,7 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   color: #fff;
   font-size:35px;
-  margin-left: 15%;
+  margin-left: 25%;
   align-self: start;
 
 
@@ -93,7 +101,19 @@ export const HeroBtnWrapper = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;
-
+  
+ div{
+   display: flex;
+   font-size: 1rem;
+   background: grey;
+   width: 1rem;
+   height: 1rem;
+   display: block;
+   margin-right: auto;
+   cursor: pointer;
+   border-radius: .2rem;
+   
+ }
 
 `
 export const Button = styled.button`
@@ -123,7 +143,6 @@ transition : filter 0.2s;
 // FOOTER CODE
 
 export const FooterContainer = styled.footer` 
-/* background: #14213D; */
 background: transparent;
 display: flex;
 justify-content: center;
@@ -141,11 +160,25 @@ margin-top: auto;
 `
 
 export const FooterText = styled.div`
-color: #fff;
-font-size: 24px;
-display: flex;
-align-items: center;
-text-decoration: underline;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  gap: 1rem;
+  width:20%;
+  justify-content: center;
+  text-decoration: none;
+
+  span{
+    cursor: pointer;
+
+    &:hover {
+      color: #FCA311;
+    }
+
+
+  }
 
 `
 
@@ -156,7 +189,14 @@ export const FooterIcons = styled.div`
   cursor: pointer;
   font-size: 24px;
   gap: 25px;
+  width:80%;
+  margin-left: 26%;
 
+  div{
+    &:hover {
+      color: #FCA311;
+    }
+  }
 `
 
 export const HeroContainer = styled.div``

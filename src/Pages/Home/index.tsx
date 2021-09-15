@@ -1,5 +1,4 @@
-import { 
-  
+import {
   HeroContent,
   HeroTitle,
   HeroH1,
@@ -7,76 +6,95 @@ import {
   Container,
   HeroBtnWrapper,
   Button,
-  FooterIcons, 
-  FooterContainer
-} from './styles'
+  FooterIcons,
+  FooterContainer,
+  FooterText,
+} from "./styles";
 
-import { 
+import {
   FaFacebookF,
-  FaFacebookMessenger, 
-  FaGithub, 
-  FaInstagram, 
-  FaLinkedinIn, 
-  FaTwitter, 
-  FaWhatsapp 
-} from "react-icons/fa"
+  FaFacebookMessenger,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
-import Typewriter from 'typewriter-effect'
+import { GiGears } from "react-icons/gi"
+
+import Typewriter from "typewriter-effect";
 
 import Navbar from "../../Components/Navbar/Navbar";
-import { useState } from 'react';
-import Sidebar from '../../Components/Sidebar';
+import { useState } from "react";
+import Sidebar from "../../Components/Sidebar";
 
-
-
-const Home:React.FC = () => {
-
+const Home: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () =>{
+  const toggle = () => {
     setIsOpen(!isOpen);
-  }
-  return(
+  };
+  return (
     <>
-
-    <Sidebar isOpen={isOpen} onClick={toggle} />
-    <Navbar toggle={toggle} />
-    <Container>
-          <HeroContent>
-            <HeroTitle>Welcome</HeroTitle>
+      <Sidebar isOpen={isOpen} onClick={toggle} />
+      <Navbar toggle={toggle} />
+      <Container>
+        <HeroContent>
+          <HeroTitle>Welcome</HeroTitle>
+          <div>
+            <HeroH1>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  strings: ["I’m Danilo Miranda.", "I’m a Web Developer."],
+                }}
+              />
+            </HeroH1>
+          </div>
+          <HeroP>SOFTWARE DEVELOPER</HeroP>
+          <HeroBtnWrapper>
             <div>
-              <HeroH1>
-                <Typewriter
-                  options={{
-                    autoStart: true,
-                    loop: true,
-                    delay: 100,
-                    strings: ["I’m Danilo Miranda.", "I’m a Web Developer."],
-                  }}
-                  />
-              </HeroH1>
+              <GiGears />
             </div>
-            <HeroP>SOFTWARE DEVELOPER</HeroP>
-            <HeroBtnWrapper>
-              <Button>HIRE</Button>
-            </HeroBtnWrapper>
-          </HeroContent>
+            <Button>HIRE</Button>
+          </HeroBtnWrapper>
+        </HeroContent>
 
-          <FooterContainer>
-            
-            <FooterIcons>
-                <FaLinkedinIn />
+        <FooterContainer>
+          <FooterText>
+            <span>EN</span>
+            <span>PT</span>
+          </FooterText>
+          <FooterIcons>
+            <div>
+              <FaLinkedinIn />
+            </div>
+            <div>
               <FaWhatsapp />
+            </div>
+            <div>
               <FaTwitter />
+            </div>
+            <div>
               <FaFacebookF />
+            </div>
+            <div>
               <FaInstagram />
+            </div>
+            <div>
               <FaGithub />
+            </div>
+            <div>
               <FaFacebookMessenger />
-            </FooterIcons>
-          </FooterContainer>
-        </Container>
+            </div>
+          </FooterIcons>
+        </FooterContainer>
+      </Container>
     </>
-  )
-}
+  );
+};
 
 export default Home;
