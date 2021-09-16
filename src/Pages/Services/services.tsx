@@ -3,14 +3,17 @@ import {
   AboutHeader,
   MainContent,
   Div,
-  ExperienceContent,
-  FristSpan,
-  SecondSpan,
-  ExperienceDiv,
+  ExperienceSection,
+  ExperienceMain,
+  ExperienceDiv1,
+  ExperienceDiv2,
+  ExperienceDiv3,
+  ServiceFooter,
 } from "./styles";
 
 import "../../styles/stylesContent.scss";
 import SideBarMenu from "../../Components/SidebarMenu";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Services: React.FC = () => {
   return (
@@ -22,9 +25,7 @@ const Services: React.FC = () => {
           <Container>
             <Div>
               <AboutHeader>
-                <h2>
-                  SERVICES <span> </span>
-                </h2>
+                <div>SERVICES</div>
 
                 <p>What I do</p>
               </AboutHeader>
@@ -35,15 +36,44 @@ const Services: React.FC = () => {
                 <div>SYSTEMS</div>
               </MainContent>
 
-              <ExperienceContent>
-                <FristSpan>ReactJs</FristSpan>
-                    <ExperienceDiv>
-                      <div />
-                    </ExperienceDiv>
-                <SecondSpan>86%</SecondSpan>
-              </ExperienceContent>
+              <ExperienceSection>
+                <header>
+                  <h2>Hard Skills</h2>
+                </header>
 
-              
+                <ExperienceMain>
+                  <p>
+                    ReactJs <span>85%</span>
+                  </p>
+
+                  <ExperienceDiv1>
+                    <div></div>
+                  </ExperienceDiv1>
+
+                  <p>
+                    Git <span>92%</span>
+                  </p>
+
+                  <ExperienceDiv2>
+                    <div></div>
+                  </ExperienceDiv2>
+
+                  <p>
+                    Linux <span>88%</span>
+                  </p>
+
+                  <ExperienceDiv3>
+                    <div></div>
+                  </ExperienceDiv3>
+                </ExperienceMain>
+              </ExperienceSection>
+
+              <ServiceFooter>
+                <div>
+                
+                  <FaWhatsapp />
+                </div>
+              </ServiceFooter>
             </Div>
           </Container>
         </main>
