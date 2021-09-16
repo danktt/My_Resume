@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
               <AboutHeader>
                 <p>CONTACT</p>
                 <h2>
-                  About Me <span> </span>{" "}
+                  About Me <span> </span>
                 </h2>
               </AboutHeader>
 
