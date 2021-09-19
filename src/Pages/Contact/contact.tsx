@@ -1,4 +1,30 @@
-import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
+import {
+  Container,
+  ExperienceHeader,
+  ExperienceMain,
+  Div,
+  ContactDiv,
+  ContactFooter,
+  SectionFirst,
+  SectionSecond,
+  SideBtnWrap,
+  SidebarRouter,
+  RobotDiv,
+  IconDiv,
+} from "./styles";
+
+import {
+  FaFacebookF,
+  FaFacebookMessenger,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaMapMarkedAlt,
+  FaPhoneAlt,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md"
 
 import "../../styles/stylesContent.scss";
 import SideBarMenu from "../../Components/SidebarMenu";
@@ -12,36 +38,96 @@ const Contact: React.FC = () => {
         <main>
           <Container>
             <Div>
-              <AboutHeader>
-                <p>CONTACT</p>
-                <h2>
-                  About Me <span> </span>
-                </h2>
-              </AboutHeader>
+              <ExperienceHeader>
+                <h2>CONTACT</h2>
+                <p>Get in Touch</p>
+              </ExperienceHeader>
 
-              <AboutMain>
-                <h2>
-                  I'm <span> Danilo Miranda, </span> a Software Developer
-                </h2>
+              <ExperienceMain>
+                <SectionFirst>
+                  <header>
+                    <h1>MAPA</h1>
+                  </header>
+                  <div>
+                    <div>
+                    <FaMapMarkedAlt />
+                    <h1>ADDRESS</h1>
+                    </div>
 
-                <p>
-                  I started in the administrative area and was transferred to
-                  the communication technology sector, where I started as a
-                  computer maintenance technician.
-                </p>
-                <p>
-                  Then, I took a specialized course in telecommunications
-                  networks, where I went further in the technology area.
-                </p>
-                <p>
-                  I entered the Computer Engineering course, studied 5 semesters
-                  and did not finish.
-                </p>
-                <p>
-                  Currently I work with Information Technology, I am studying
-                  Systems Analysis and Development and programming.
-                </p>
-              </AboutMain>
+                    <p>789 Bom Jesus da Lapa Street Três Lagoas MS Brazil</p>
+                   
+                   <div>
+                    <MdEmail />
+                    <h1>E-MAIL</h1>
+                   </div>
+                   
+                    <p>danilo.miranda15@ gmail.com</p>
+                   <div>
+                    <FaPhoneAlt />
+                    <h1>CELLPHONE</h1>
+                   </div>
+                    <p>+55 67 991612644</p>
+
+                    
+                    <span>FOLLOW ME</span>
+                    <div>
+                      <div>
+                        <FaLinkedinIn />
+                      </div>
+                      <div>
+                        <FaWhatsapp />
+                      </div>
+                      <div>
+                        <FaTwitter />
+                      </div>
+                      <div>
+                        <FaFacebookF />
+                      </div>
+                      <div>
+                        <FaInstagram />
+                      </div>
+                      <div>
+                        <FaGithub />
+                      </div>
+                      <div>
+                        <FaFacebookMessenger />
+                      </div>
+                    </div>
+                  </div>
+                </SectionFirst>
+
+                <SectionSecond>
+                  <h1>How can I <span>help you?</span> </h1>
+                  <input type="text" placeholder="Full Name" />
+                  <input type="text" placeholder="Email Address" />
+                  <input type="text" placeholder="Subject" />
+
+                  <textarea placeholder="Message"></textarea>
+
+                  <RobotDiv>
+                    I`m not a Robot
+                  </RobotDiv>
+
+
+                  <SideBtnWrap>
+                     <SidebarRouter>Send message</SidebarRouter>
+                  </SideBtnWrap>
+
+                </SectionSecond>
+              </ExperienceMain>
+
+              <ContactFooter>
+                
+                <ContactDiv>
+                  <h1>Copyright  C  2021 <span>Danilo Miranda</span>.</h1>
+                  <p> All Rights Reserved.</p>
+                 <span>Terms  Policy   |  Disclaimer </span>
+                </ContactDiv>
+                
+                <IconDiv>
+                  <FaWhatsapp />
+                </IconDiv>
+              </ContactFooter>
             </Div>
           </Container>
         </main>

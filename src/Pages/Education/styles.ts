@@ -1,63 +1,56 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: center;
 
-  height: 100%;
+  height: 100%; */
   background: #131418;
 `
 
 export const Div = styled.div`
   /* padding: 34px; */
-  max-height: 900px;
-  max-width: auto;
+  /* max-height: 900px;
+  max-width: auto; */
+  display: column;
+  align-items: center;
   
 `
 
 
-export const EduacitonHeader = styled.div`
+export const EduacitonHeader = styled.header`
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding: 12rem;
-  margin-bottom: -10rem;
-
-
-
-    h2{
-      align-self: center;
-      font-family: "PT Sans Caption";
-      color: #FCA311 ;
-    }
+  align-items: center;
+  height: 20vh;
   
-    p{
-      font-size: 5rem;
-      font-family: "Poppins" ;
-      color: #fff;
-    }
+  div {
+    
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    width: 10rem;
+    font-family: "PT Sans Caption";
+    font-size: 1.9rem;
+    color: #fca311;
+    border-bottom: 1px solid #fca311;
+  }
 
-    span{
-      border-bottom: 1px solid #FCA311 ;
-      display: block ;
-      width: 130px;
-      border-color: #FCA311 ;
-      margin-right: auto ;
-      margin-top: 0rem;
-      border-width: 2px ;
-      box-sizing: border-box;
-      font-weight: 600 ;
-      
-    }
+  p {
+    font-size: 6.25rem;
+    font-family: "Poppins";
+    color: #fff;
+  }
 `
 
 
 export const EduactionMain = styled.div`
   width: 1095px;
-  height: 489px;
+  height: 50vh;
   background: #14213D;
   border-radius: 1rem;
-
+  margin: 2rem;
+  
 
   header{
     display:column;
@@ -130,4 +123,30 @@ export const EducationFooter = styled.footer`
       filter: brightness(0.8);
     }
   }
+`
+export const Footer = styled.footer` 
+ width: 100%;
+ height: 10vh;
+ font-size: 3rem;
+ color: #fff;
+ display: flex;
+ justify-content: right;
+ padding: 0 1rem;
+ background: aqua;
+ 
+ div{
+   background: #FCA311;
+   width: 4rem;
+   height: 4rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+
+   &:hover{
+     filter: brightness(0.8);
+   }
+
+ }
 `

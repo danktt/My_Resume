@@ -18,7 +18,7 @@ export const AboutHeader = styled.div`
   margin: 0 auto;
   padding: 12rem;
   margin-bottom: -8rem;
-
+  
   h2 {
     align-self: center;
     font-family: "PT Sans Caption";
@@ -88,6 +88,7 @@ export const AboutMain = styled.div`
     font-size: 25px;
     padding: 0 20rem;
     margin-top: 1rem;
+    text-align: center;
   }
 `;
 

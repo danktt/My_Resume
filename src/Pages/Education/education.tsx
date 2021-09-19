@@ -4,13 +4,15 @@ import {
   EduacitonHeader,
   Div,
   EducationDiv,
-  EducationFooter
+  EducationFooter,
+  Footer,
 } from "./styles";
 
 import "../../styles/stylesContent.scss";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { VscDebugBreakpointLog } from "react-icons/vsc"
 import SideBarMenu from "../../Components/SidebarMenu";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Education: React.FC = () => {
   return (
@@ -22,12 +24,9 @@ const Education: React.FC = () => {
           <Container>
             <Div>
               <EduacitonHeader>
-                <h2>
+                <div>
                   EDUCATION               
-                  <span>
-                  </span>
-
-                </h2>
+                </div>
 
                 <p>Knowledge</p>
               </EduacitonHeader>
@@ -63,9 +62,14 @@ const Education: React.FC = () => {
                   <div> <VscDebugBreakpointLog /></div>
                   <div> <VscDebugBreakpointLog /></div>
                   <div> <VscDebugBreakpointLog /></div>
-                  
                 </EducationFooter>
               </EduactionMain>
+
+              <Footer>
+                <div>
+                  <FaWhatsapp />
+                </div>
+              </Footer>
             </Div>
           </Container>
         </main>

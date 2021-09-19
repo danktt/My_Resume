@@ -1,9 +1,16 @@
-import { Container, AboutMain, AboutHeader, Div } from "./InfoElements";
+import {
+  Container,
+  ExperienceHeader,
+  ExperienceMain,
+  Div,
+  ExperienceFooter,
+} from "./InfoElements";
 
 import "../../styles/stylesContent.scss";
 import SideBarMenu from "../../Components/SidebarMenu";
+import { FaWhatsapp } from "react-icons/fa";
 
-const Experience: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <>
       <div className="wrapper">
@@ -12,36 +19,52 @@ const Experience: React.FC = () => {
         <main>
           <Container>
             <Div>
-              <AboutHeader>
-                <p>EXPERIENCE</p>
-                <h2>
-                  About Me <span> </span>{" "}
-                </h2>
-              </AboutHeader>
+              <ExperienceHeader>
+                <h2>EXPERIENCE</h2>
+                <p>Occupation</p>
+              </ExperienceHeader>
 
-              <AboutMain>
-                <h2>
-                  I'm <span> Danilo Miranda, </span> a Software Developer
-                </h2>
+              <ExperienceMain>
+                  <section>
+                    <div>
+                      <header>
+                        <p>Brazilian Army</p> 
+                        <span>2018 – 2021</span>
+                      </header>
+                      <main>
+                      <h2>System Developer</h2>
+                      <p>Linux | PHP | Laravel | MySQL | CSS | HTML</p>
+                      </main>
+                    </div>
 
-                <p>
-                  I started in the administrative area and was transferred to
-                  the communication technology sector, where I started as a
-                  computer maintenance technician.
-                </p>
-                <p>
-                  Then, I took a specialized course in telecommunications
-                  networks, where I went further in the technology area.
-                </p>
-                <p>
-                  I entered the Computer Engineering course, studied 5 semesters
-                  and did not finish.
-                </p>
-                <p>
-                  Currently I work with Information Technology, I am studying
-                  Systems Analysis and Development and programming.
-                </p>
-              </AboutMain>
+                    <div>
+                      <header>
+                        <p>Brazilian Army</p> 
+                        <span>2020 – 2023</span>
+                      </header>
+                      <main>
+                      <h2>Network and telecommunication technician</h2>
+                      <p>Provide preventive and corrective maintenance in telecommunications systems</p>
+                      </main>
+                    </div>
+                    <div>
+                      <header>
+                        <p>Brazilian Army</p> 
+                        <span>2020 – 2023</span>
+                      </header> 
+                      <main>
+                      <h2>Computer maintenance technician</h2>
+                      <p>Performs preventive and corrective maintenance of computer equipment, identifying the main components of a computer and its functionalities</p>
+                      </main>
+                    </div>
+                  </section>
+              </ExperienceMain>
+
+              <ExperienceFooter>
+                <div>
+                  <FaWhatsapp />
+                </div>
+              </ExperienceFooter>
             </Div>
           </Container>
         </main>
@@ -50,4 +73,4 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export default Contact;

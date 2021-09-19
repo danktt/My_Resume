@@ -25,7 +25,7 @@ const Services: React.FC = () => {
           <Container>
             <Div>
               <AboutHeader>
-                <div>SERVICES</div>
+                <h2>SERVICES</h2>
 
                 <p>What I do</p>
               </AboutHeader>

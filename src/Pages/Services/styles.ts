@@ -10,28 +10,31 @@ export const Div = styled.div`
   /* padding: 34px;
   max-height: 900px;
   max-width: auto; */
+  
 `;
 
 export const AboutHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 35vh;
+  padding-top:13em;
   
-  div {
+
+  h2 {
     
     display: flex;
     align-content: center;
     justify-content: right;
     width: 10rem;
     font-family: "PT Sans Caption";
-    font-size: 1.9rem;
+    
     color: #fca311;
-    border-bottom: 1px solid #fca311;
+    border-bottom: 2px solid #fca311;
   }
 
   p {
-    font-size: 6.25rem;
+    font-size: 5rem;
     font-family: "Poppins";
     color: #fff;
   }
@@ -51,8 +54,13 @@ export const AboutHeader = styled.header`
 export const MainContent = styled.main`
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 7rem;
   height: 22vh;
+  
+
+
+
   div {
     background: #14213d;
     font-size: 1.2rem;
@@ -74,7 +82,11 @@ export const ExperienceSection = styled.section`
   margin: 0 13rem; */
   
   /* height: 48vh; */
-  
+  width: 848px;
+  display: flex;
+  justify-content: center;
+
+
   header{
     color: #fff;
     margin-top:1rem;

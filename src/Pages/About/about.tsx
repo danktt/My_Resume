@@ -30,7 +30,7 @@ const About: React.FC = () => {
                 </h2>
 
                 <p>
-                  I started in the administrative area and was transferred to
+                  I started in the administrative area and I was transferred to
                   the communication technology sector, where I started as a
                   computer maintenance technician.
                 </p>
@@ -43,8 +43,8 @@ const About: React.FC = () => {
                   and did not finish.
                 </p>
                 <p>
-                  Currently I work with Information Technology, I am studying
-                  Systems Analysis and Development and programming.
+                  Currently I`m graduated in Systems Analysis and Development and 
+                  I work as a computer programer. 
                 </p>
               </AboutMain>
 
