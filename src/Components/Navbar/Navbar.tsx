@@ -1,5 +1,4 @@
 import { FaBars } from 'react-icons/fa'
-
 import {
   Nav,
   NavContainer,
@@ -48,7 +47,7 @@ export interface ToggleProps {
         </NavMenu>
 
         <NavBtn> 
-            <NavBtnLink to="">Download CV</NavBtnLink>
+            <NavBtnLink  to=''>Download CV</NavBtnLink>
           </NavBtn>
 
 

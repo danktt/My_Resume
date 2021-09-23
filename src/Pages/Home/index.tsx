@@ -28,8 +28,16 @@ import Typewriter from "typewriter-effect";
 import Navbar from "../../Components/Navbar/Navbar";
 import { useState } from "react";
 import Sidebar from "../../Components/Sidebar";
+import { Link } from "react-router-dom";
 
-const Home: React.FC = () => {
+
+type UriProps = {
+  uriLink: string;
+
+}
+
+
+const Home: React.FC<UriProps> = (props: UriProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -59,7 +67,7 @@ const Home: React.FC = () => {
             <div>
               <GiGears />
             </div>
-            <Button>HIRE</Button>
+            <Button to="/contact">HIRE</Button>
           </HeroBtnWrapper>
         </HeroContent>
 
@@ -69,27 +77,27 @@ const Home: React.FC = () => {
             <span>PT</span>
           </FooterText>
           <FooterIcons>
-            <div>
+            <a href="https://www.linkedin.com/in/danilo-miranda15/" target="_blank" >
               <FaLinkedinIn />
-            </div>
-            <div>
+            </a>
+            <a href="https://whatsapp.com" target="_blank">
               <FaWhatsapp />
-            </div>
-            <div>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
               <FaTwitter />
-            </div>
-            <div>
+            </a>
+            <a href="https://www.facebook.com/danilo.miranda.1272/" target="_blank">
               <FaFacebookF />
-            </div>
-            <div>
+            </a>
+            <a href="https://www.instagram.com/_daniilo.01/" target="_blank">
               <FaInstagram />
-            </div>
-            <div>
+            </a>
+            <a href="https://github.com/danktt" target="_blank">
               <FaGithub />
-            </div>
-            <div>
+            </a>
+            <a href="https://www.facebook.com/messages" target="_blank">
               <FaFacebookMessenger />
-            </div>
+            </a>
           </FooterIcons>
         </FooterContainer>
       </Container>

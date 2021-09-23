@@ -1,3 +1,4 @@
+import { Link as LinkR } from "react-router-dom"
 import styled from "styled-components"
 import img from '../../assets/images/background.jpg'
 
@@ -8,20 +9,17 @@ export const Container = styled.div`
   height: 100vh;
   background-image: url(${img});
 
-  
-  
 `
 
 
 export const HeroContent = styled.div`
-  max-width: 1200px;
+  max-width: 75rem;
   position: absolute;
-  padding: 8px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: auto;
-  
+ 
 
   div{
     width: 100vw;
@@ -35,23 +33,23 @@ export const HeroTitle = styled.p`
   margin-left: 25%;
   align-self: start;
   display: flex;
-  div{
-    background: aqua;
-    width: 100%;
-    margin-right: 100%;
-  }
+ 
+    div{
+      width: 100%;
+      margin-right: 100%;
+    }
   
-  
+    @media screen and (max-width:960px){
+      font-size: 28px;
+      align-self: center;
+      margin-right: 110px;
+    }
 
-  @media screen and (max-width:960px){
-    font-size: 28px;
-    align-self: center;
-    margin-right: 110px;
-  }
+    @media screen and (max-width:480px){
+      font-size: 23px;
+      align-self: center;
 
-  @media screen and (max-width:480px){
-    font-size: 23px;
-  }
+    }
 `
 
 export const HeroH1 = styled.h1`
@@ -61,17 +59,19 @@ export const HeroH1 = styled.h1`
   display: flex;
   position: relative;
   width: auto;
- 
+  
 
   @media screen and (max-width:960px){
     font-size: 40px;
     display: flex;
-    align-items: center;
+    text-align: center;
 
   }
 
   @media screen and (max-width:480px){
     font-size: 32px;
+    align-self: center;
+
   }
 
 
@@ -92,6 +92,8 @@ export const HeroP = styled.p`
 
   @media screen and (max-width:480px){
     font-size: 23px;
+    text-align: center;
+
   }
 
 `
@@ -116,7 +118,7 @@ export const HeroBtnWrapper = styled.div`
  }
 
 `
-export const Button = styled.button`
+export const Button = styled(LinkR)`
 border-radius: 16px;
 height: 40px;
 width: 200px;
@@ -130,6 +132,7 @@ background: transparent;
 color: #FCA311;
 cursor: pointer;
 transition : filter 0.2s;
+text-decoration: none;
 
 
 &:hover{
@@ -192,7 +195,8 @@ export const FooterIcons = styled.div`
   width:80%;
   margin-left: 26%;
 
-  div{
+  a{
+    color: #fff;
     &:hover {
       color: #FCA311;
     }
