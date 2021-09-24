@@ -146,41 +146,34 @@ text-decoration: none;
 // FOOTER CODE
 
 export const FooterContainer = styled.footer` 
-background: transparent;
-display: flex;
-justify-content: center;
-width: 100vw;
+  
+  /* display: flex;
+  justify-content: center; */
+  /*
 
-height: 70px;
-z-index: 1;
-margin-top: auto;
+  height: 70px;
+  z-index: 1;
+  */
+  margin-top: auto;
+  width: 100%;
+  display: flex;
 
-
-
-
-
-
-`
-
+` 
 export const FooterText = styled.div`
   color: #fff;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  text-decoration: underline;
-  gap: 1rem;
-  width:20%;
-  justify-content: center;
+  font-size: 1.5rem;
   text-decoration: none;
-
+  width: 10rem;
+  margin-right: auto;
+ 
+  text-align: center;
+  z-index:1;
   span{
     cursor: pointer;
-
+    margin-right: 0.7rem;
     &:hover {
       color: #FCA311;
     }
-
-
   }
 
 `
@@ -188,12 +181,15 @@ export const FooterText = styled.div`
 export const FooterIcons = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #fff;
   cursor: pointer;
-  font-size: 24px;
-  gap: 25px;
-  width:80%;
-  margin-left: 26%;
+  font-size: 1.5rem;
+  gap:  1.5rem;
+  margin-left: -10rem;
+  width: 100%;
+  height: 2.5rem;
+  
 
   a{
     color: #fff;
@@ -202,8 +198,3 @@ export const FooterIcons = styled.div`
     }
   }
 `
-
-export const HeroContainer = styled.div``
-export const HeroBg = styled.div``
-export const HeroBackground = styled.img``
-

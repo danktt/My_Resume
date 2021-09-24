@@ -56,12 +56,16 @@ import { Link as LinkR } from 'react-router-dom'
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    
+      &.active{
+        color: #FCA311;
+      }
 
-    &:hover{
-      
-      filter: brightness(0.8);
-      color: #FCA311; 
-    }
+      &:hover{
+        
+        filter: brightness(0.8);
+        color: #FCA311; 
+      }
   `
 
 export const SideBtnWrap = styled.div`

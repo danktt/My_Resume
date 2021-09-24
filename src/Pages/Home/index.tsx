@@ -13,7 +13,7 @@ import {
 
 import {
   FaFacebookF,
-  FaFacebookMessenger,
+  // FaFacebookMessenger,
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
@@ -21,21 +21,17 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-import { GiGears } from "react-icons/gi"
+import { GiGears } from "react-icons/gi";
 
 import Typewriter from "typewriter-effect";
 
 import Navbar from "../../Components/Navbar/Navbar";
 import { useState } from "react";
 import Sidebar from "../../Components/Sidebar";
-import { Link } from "react-router-dom";
-
 
 type UriProps = {
   uriLink: string;
-
-}
-
+};
 
 const Home: React.FC<UriProps> = (props: UriProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,27 +73,52 @@ const Home: React.FC<UriProps> = (props: UriProps) => {
             <span>PT</span>
           </FooterText>
           <FooterIcons>
-            <a href="https://www.linkedin.com/in/danilo-miranda15/" target="_blank" >
+            <a
+              href="https://www.linkedin.com/in/danilo-miranda15/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaLinkedinIn />
             </a>
-            <a href="https://whatsapp.com" target="_blank">
+            <a href="https://whatsapp.com" 
+              rel="noreferrer" 
+              target="_blank">
               <FaWhatsapp />
             </a>
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://twitter.com/" 
+            rel="noreferrer" 
+            target="_blank"
+            >
               <FaTwitter />
             </a>
-            <a href="https://www.facebook.com/danilo.miranda.1272/" target="_blank">
+            <a
+              href="https://www.facebook.com/danilo.miranda.1272/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaFacebookF />
             </a>
-            <a href="https://www.instagram.com/_daniilo.01/" target="_blank">
+            <a
+              href="https://www.instagram.com/_daniilo.01/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaInstagram />
             </a>
-            <a href="https://github.com/danktt" target="_blank">
+            <a
+              href="https://github.com/danktt"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaGithub />
             </a>
-            <a href="https://www.facebook.com/messages" target="_blank">
+            {/* <a
+              href="https://www.facebook.com/messages"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaFacebookMessenger />
-            </a>
+            </a> */}
           </FooterIcons>
         </FooterContainer>
       </Container>
