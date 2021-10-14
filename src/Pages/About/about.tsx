@@ -1,11 +1,8 @@
-import { Container, AboutMain, AboutHeader, Div, AboutFooter} from "./styles";
+import { Container, AboutMain, AboutHeader, Div, AboutFooter } from "./styles";
 
 import "../../styles/stylesContent.scss";
 import SideBarMenu from "../../Components/SidebarMenu";
 import { FaWhatsapp } from "react-icons/fa";
-
-
-
 
 const About: React.FC = () => {
   return (
@@ -17,10 +14,7 @@ const About: React.FC = () => {
           <Container>
             <Div>
               <AboutHeader>
-                <h2>
-                  ABOUTE ME <span> </span>
-                </h2>
-
+                <h2>ABOUTE ME</h2>
                 <p>Know Me More</p>
               </AboutHeader>
 
@@ -43,14 +37,13 @@ const About: React.FC = () => {
                   and did not finish.
                 </p>
                 <p>
-                  Currently I`m graduated in Systems Analysis and Development and 
-                  I work as a computer programer. 
+                  Currently I`m graduated in Systems Analysis and Development
+                  and I work as a computer programer.
                 </p>
               </AboutMain>
 
               <AboutFooter>
                 <div>
-                
                   <FaWhatsapp />
                 </div>
               </AboutFooter>

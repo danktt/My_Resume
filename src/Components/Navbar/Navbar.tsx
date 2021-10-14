@@ -1,4 +1,8 @@
+
 import { FaBars } from 'react-icons/fa'
+// import { GiGears } from "react-icons/gi";
+// import { RouteChildrenProps } from 'react-router';
+
 import {
   Nav,
   NavContainer,
@@ -9,14 +13,16 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  // NavTools
 } from "./styles";
 
 
 export interface ToggleProps {
   toggle(): void;
+
 }
 
- const Navbar: React.FC<ToggleProps> = ({toggle}) => {
+ const Navbar: React.FC<ToggleProps> = ({toggle,}) => {
   return (
     <Nav>
       <NavContainer>
@@ -44,6 +50,9 @@ export interface ToggleProps {
             <NavItem> 
               <NavLinks to="/contact">Contact</NavLinks>
             </NavItem>
+            
+              
+            
         </NavMenu>
 
         <NavBtn> 
